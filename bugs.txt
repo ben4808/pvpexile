@@ -1,0 +1,6 @@
+Stand Ready when casting on self
+screen too big
+Player DEAD then not
+WASD after chatting
+
+x 411 y 235

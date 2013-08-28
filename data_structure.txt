@@ -1,0 +1,156 @@
+Game
+- GameMap map
+- HashMap<Integer, Player> players
+- int turn
+- Point activePoint
+- boolean running
+
+GameMap
+- String name
+- ArrayList<Point> startPoints
+- HashMap<Character, TerrainType>
+- Square[][]
+  - TerrainType terrain
+  - boolean blood
+  - Field field
+  - Monster monster
+- TerrainType
+  - String name
+  - int graphic
+  - boolean solid
+  - boolean opaque
+
+Player
+- PlayerState
+  - CONNECTING, OBSERVER, NOT_READY, READY, PLAYING, DISCONNECTED
+- String name
+- PlayerState state
+- HashMap<Integer, Monster> party
+- HashMap<Integer, Monster> summoned
+
+Monster
+- String name
+- int graphic
+
+- int health
+- int attack
+- int defense
+- int magic
+
+- int team
+- int teamNumber
+- ArrayList<Item> items
+
+- MonsterState
+  - Point location
+  - boolean dead
+  - int actionPoints
+  - int curSpellPoints
+  - int curHealth
+  - int speed
+  - int poison
+  - int blessed
+
+- int spellPoints
+- int hitChance
+- int critChance
+- int meleeDamage
+- int meleeBonus
+- int armor
+- int fireResist
+- int magicResist
+- int coldResist
+- int encumberance
+
+Chat
+- ArrayList<ChatLine> lines
+- ChatLine
+  - String name
+  - String message
+
+---------------------
+
+Item
+- String name
+- int id
+- int graphic
+- ItemType
+  - ONE_HAND_WEAPON, TWO_HAND_WEAPON, BREASTPLATE, HELM, SHIELD,
+    AMULET, POTION, MISSILE, NO_TYPE
+- ItemType type
+- int weight
+- int quantity
+- ArrayList<ItemEffect> effects
+- ItemEffect
+  // missiles, weapons
+  - MELEE_DAMAGE, int amount
+  - MELEE_BONUS, int amount
+  - POISONS, int amount
+  - CURSES, int amount
+  - SLOWS, int amount
+
+  // amulets, potions
+  - HEAL, int amount
+  - ENERGY, int amount
+  - CURE_POISON, int amount
+  - BLESSES, int amount
+  - HASTES, int amount
+
+  // armor
+  - ARMOR, int amount
+  - RESIST_FIRE, int amount
+  - RESIST_MAGIC, int amount
+  - RESIST_COLD, int amount
+
+Spell
+- SPARK, FLAME, FIREBALL
+- String name
+- MissileGraphic missileGraphic
+- DamageGraphic damageGraphic
+- int minLevel
+- int spellPoints
+
+Effect
+- Point point
+- ArrayList<SingleEffect> effects
+- EffectType
+  - DAMAGE, int amount
+  - CREATE_FIELD, Field field
+  - POISON, int amount
+  - CURSE, int amount
+  - SLOW, int amount
+  - HEAL, int amount
+  - ENERGY, int amount
+  - CURE_POISON, int amount
+  - BLESS, int amount
+  - HASTE, int amount
+
+Field
+- FORCE, FIRE, ICE, BLADES
+- String name
+- int graphic
+- DamageType damageType
+- DamageGraphic damageGraphic
+- int damage
+- int bonus
+
+Damage
+- DamageGraphic
+  - FIRE, MAGIC, POISON, MELEE, COLD, ANIM_FIRE, ANIM_MAGIC1, ANIM_MAGIC2
+- DamageType
+  - MELEE, FIRE, ICE, MAGIC, POISON, TYPELESS
+
+MissileGraphic
+- FLAME, ARROW, COLD
+
+CLIENT
+
+Missile
+- Point destPixel
+- Point curPixel
+- MissileGraphic
+
+Splotch
+- Point location
+- DamageGraphic
+- int frame
