@@ -1,0 +1,22 @@
+# Title
+Test Map
+
+# Map Grid (terrain symbols in terrain.txt)
+#12345678
+MMMMMMMMM
+MGGGGGGGM
+MGGGGGGGM
+MGGGGGGGM
+MGGGGGGGM
+MGGGGGGGM
+MGGGGGGGM
+MGGGGGGGM
+MGGGGGGGM
+MGGGGGGGM
+MMMMMMMMM
+
+# Player 1 Start x, y
+4, 6
+
+# Player 2 Start x, y
+4, 4

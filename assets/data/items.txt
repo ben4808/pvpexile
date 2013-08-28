@@ -1,0 +1,158 @@
+# LIST OF TYPES
+# 0 One Hand Weapon
+# 1 Two Hand Weapon
+# 2 Plate
+# 3 Helm
+# 4 Shield
+# 5 Amulet
+# 6 Potion
+# 7 Missile
+# 8 No Type
+
+# LIST OF EFFECTS
+# 0 Melee Damage
+# 1 Melee Bonus
+# 2 Poisons
+# 3 Curses
+# 4 Slows
+# 5 Armor
+# 6 Resist Fire
+# 7 Resist Magic
+# 8 Resist Cold
+# 9 Heal
+#10 Energy
+#11 Cure Poison
+#12 Bless
+#13 Haste
+
+# ID, Name, Graphic, Type, Weight, [Quantity]
+# Effects [effect, amount]
+
+# CURRENT MAX ID: 32
+
+# 1H WEAPONS
+0, Broadsword, 1, 0, 10
+0, 10
+1, 2
+
+1, Waveblade, 7, 0, 10
+0, 15
+1, 5
+
+2, Mithral Blade, 33, 0, 10
+0, 28
+1, 12
+3, 1
+
+3, Poison Dagger, 32, 0, 5
+0, 10
+1, 2
+2, 2
+
+# 2H WEAPONS
+4, Halberd, 5, 1, 20
+0, 18
+1, 2
+
+5, Greatsword, 29, 1, 15
+0, 17
+1, 8
+
+# PLATES
+6, Baldric, 14, 2, 30
+5, 15
+
+7, Chain Mail, 15, 2, 60
+5, 30
+
+8, Plate, 16, 2, 90
+5, 40
+6, 25
+
+# HELMS
+9, Leather Helm, 66, 3, 5
+5, 8
+
+10, Helm of Speed, 67, 3, 15
+5, 10
+13, 2
+
+11, Helm of Heat, 67, 3, 15
+5, 10
+8, 100
+
+# SHIELDS
+12, Wooden Shield, 13, 4, 25
+5, 15
+
+13, Blessed Shield, 12, 4, 25
+5, 15
+12, 2
+
+# AMULETS
+14, Amulet of Resistance, 72, 5, 1
+7, 50
+
+30, Lucky Charm, 73, 5, 1
+12, 1
+
+31, Arctic Necklace, 74, 5, 1
+6, 50
+
+32, Medal of Warmth, 120, 5, 1
+8, 50
+
+# POTIONS
+15, Healing Potion, 50, 6, 1, 2
+9, 30
+
+16, Energy Potion, 51, 6, 1, 2
+10, 10
+
+17, Speed Potion, 52, 6, 1, 2
+13, 6
+
+18, Strength Potion, 101, 6, 1, 2
+12, 2
+
+19, Curing Potion, 100, 6, 1, 2
+11, 4
+
+20, Power Geode, 92, 6, 1, 5
+10, 15
+
+# MISSILES
+21, Rock, 91, 7, 1, 10
+0, 5
+1, 1
+
+22, Poison Darts, 48, 7, 1, 10
+0, 10
+1, 2
+2, 1
+
+23, Razordisks, 49, 7, 1, 10
+0, 15
+1, 5
+
+24, Crossbow, 21, 7, 1, 20
+0, 15
+1, 10
+
+25, Darts of Lethargy, 48, 7, 1, 10
+4, 3
+
+26, Knives of Inability, 30, 7, 1, 10
+0, 5
+1, 1
+3, 2
+
+27, Toxic Sticky Bag, 83, 7, 1, 3
+2, 3
+
+28, Nuclear Grenade, 34, 7, 2, 5
+0, 100
+1, 100
+
+# NO TYPE
+29, Lead Bar, 87, 8, 150

@@ -1,0 +1,3 @@
+# Sym, Name, Graphic, Solid, Opaque
+M, Mountains  ,18, 1, 1
+G, Grass      , 2, 0, 0
